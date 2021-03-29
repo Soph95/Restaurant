@@ -8,7 +8,6 @@ describe("add menu to restaurant", () => {
     const drinks = new Menu("Drinks");
     italian.addMenu(starters);
     italian.addMenu(drinks);
-    console.log(italian.menus);
     expect(italian.menus).toEqual([starters, drinks]);
   });
 });

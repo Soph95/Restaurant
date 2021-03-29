@@ -7,7 +7,6 @@ describe("Items", () => {
     const starters = new Menu("Starters");
     const wings = new Item("Chicken Wings", "2.99");
     starters.addItem(wings);
-    console.log(starters);
     expect(starters.items).toEqual([wings]);
   });
 });

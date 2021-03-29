@@ -9,9 +9,6 @@ describe("Restaurant", () => {
     const tacos = new Item("Tacos", "8.99");
     mexican.addMenu(mains);
     mains.addItem(tacos);
-    console.log(mexican);
-    console.log(mexican.menus);
-    console.log(tacos);
     expect(mexican.menus).toEqual([mains]);
     expect(mains.items).toEqual([tacos]);
   });
