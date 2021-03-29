@@ -2,9 +2,12 @@ const Restaurant = require("./restaurant");
 const Menu = require("./menu");
 
 describe("Menus", () => {
-  test("Add menu", () => {
+  test("Menu has correct title", () => {
     const starters = new Menu("Starters", "🦐");
     expect(starters.title).toEqual("Starters");
+  });
+  test("Menu has correct icon", () => {
+    const starters = new Menu("Starters", "🦐");
     expect(starters.icon).toEqual("🦐");
   });
   test("Add menu to restaurant", () => {

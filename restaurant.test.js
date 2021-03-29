@@ -3,9 +3,12 @@ const Menu = require("./menu");
 const Item = require("./item");
 
 describe("Restaurant", () => {
-  test("Add restaurant", () => {
+  test("Restaurant has correct name", () => {
     const mexican = new Restaurant("Mexican", "London");
     expect(mexican.name).toEqual("Mexican");
+  });
+  test("Restaurant has correct city", () => {
+    const mexican = new Restaurant("Mexican", "London");
     expect(mexican.city).toEqual("London");
   });
   test("Create restaurant, add menu and item", () => {
