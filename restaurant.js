@@ -2,7 +2,7 @@ class Restaurant {
   constructor(name, city) {
     this.name = name;
     this.city = city;
-    this.img = "";
+    this.img = "some URL";
     this.menus = [];
   }
 

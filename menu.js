@@ -1,7 +1,7 @@
 class Menu {
-  constructor(title) {
+  constructor(title, icon) {
     this.title = title;
-    this.icon = "🥘";
+    this.icon = icon;
     this.items = [];
   }
   addItem(item) {

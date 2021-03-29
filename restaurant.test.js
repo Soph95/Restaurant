@@ -3,9 +3,14 @@ const Menu = require("./menu");
 const Item = require("./item");
 
 describe("Restaurant", () => {
-  test("create restaurant, add menu and item", () => {
+  test("Add restaurant", () => {
     const mexican = new Restaurant("Mexican", "London");
-    const mains = new Menu("Main Menu");
+    expect(mexican.name).toEqual("Mexican");
+    expect(mexican.city).toEqual("London");
+  });
+  test("Create restaurant, add menu and item", () => {
+    const mexican = new Restaurant("Mexican", "London");
+    const mains = new Menu("Main Menu", "🌯");
     const tacos = new Item("Tacos", "8.99");
     mexican.addMenu(mains);
     mains.addItem(tacos);
